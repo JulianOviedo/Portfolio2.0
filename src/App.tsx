@@ -26,8 +26,6 @@ function App() {
 
   return (
     <div className="relative bg-bg-light lg:px-32">
-
-
       <header className="flex flex-row p-6 py-3 justify-between">
         <div className="flex flex-row gap-4 items-center">
           <Logo />
@@ -71,7 +69,7 @@ function App() {
         </div>
       }
 
-      <main className="p-6 ">
+      <main className="p-6">
 
         <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col">
           <span className="text-primary font-bold text-xl">Hello! 👋🏻 My Name is</span>
@@ -87,8 +85,8 @@ function App() {
           <SectionTitle>About</SectionTitle>
 
 
-          <img className="w-[500px] h-[450px] rounded-md" src="src/assets/profile.png" alt="profile img" />
-          <p className="my-6 text-lg font-extralight">
+          <img className="w-full h-[350px] rounded-md" src="src/assets/profile.png" alt="profile img" />
+          <p className="my-6 text-md text-justify font-extralight">
             👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
             🌍  I'm based in Córdoba, Argentina <br /><br />
@@ -100,7 +98,7 @@ function App() {
 
         <section id="Skills" className="mb-40">
           <SectionTitle>Skills</SectionTitle>
-          <div className="mt-20 grid grid-cols-5 gap-10 items-center flex-wrap justify-center">
+          <div className="mt-20 grid grid-cols-4 gap-10 items-center flex-wrap justify-center">
             <Logos />
           </div>
 
