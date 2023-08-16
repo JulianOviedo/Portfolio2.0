@@ -5,7 +5,7 @@ export const Proyects = () => {
     return (
         <>
             <ProyectCard
-                img={"/src/assets/countries-api.png"}
+                img={"/Users/solvd/Desktop/dev/Portfolio2.0/src/assets/countries-api.png"}
                 title={"Countries API"}
                 technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon/>]}
                 urlGithub={'https://github.com/JulianOviedo/countries-api'}
