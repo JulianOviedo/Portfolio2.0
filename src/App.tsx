@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useObserver } from "./hooks/useObserver"
 import { SectionTitle } from "./components/SectionTitle";
 import { Logos } from "./components/Logos";
@@ -7,10 +7,24 @@ import { Proyects } from "./components/ProyectsSection";
 import { SocialMedia } from "./components/SocialMedia";
 
 function App() {
+  const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
+
   const NAV_LIs = ['Home', 'About', 'Skills', 'My Work', 'Contact']
+
+  const handleBurgerMenu = () => { 
+    setIsBurgerMenuOpen(!isBurgerMenuOpen)
+    if (isBurgerMenuOpen) {
+      document.body.classList.remove('no-scroll')
+    } else {
+      document.body.classList.add('no-scroll')
+    }
+  }
+  
 
   return (
     <div className="bg-bg-light lg:px-32">
+
+
       <header className="flex flex-row p-6 py-3 justify-between">
         <div className="flex flex-row gap-4 items-center">
           <Logo />
@@ -29,11 +43,29 @@ function App() {
             <button className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</button>
           </ul>
         <div className="flex flex-row gap-1 items-center ml-4">
-          <BurgerMenuIcon />
+          <button onClick={handleBurgerMenu}>
+           <BurgerMenuIcon />
+          </button>
           <LighThemeIcon/>
         </div>
         </nav>
       </header>
+
+      {isBurgerMenuOpen && 
+        <div id="burger-menu" className="absolute bg-white w-full h-full p-6">
+          <nav className="flex">
+          <ul className="flex-col items-center">
+            {NAV_LIs.map(navItem => {
+              return (
+                <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
+                  <a onClick={handleBurgerMenu} className="hover:text-disabled cursor-pointer  text-black" href={`#${navItem}`}>{navItem}</a>
+                </li>
+              )
+            })}
+            </ul>
+          </nav>
+        </div>
+      }
 
       <main className="p-6 ">
 
