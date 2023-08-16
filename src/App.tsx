@@ -98,7 +98,7 @@ function App() {
 
         <section id="Skills" className="mb-40">
           <SectionTitle>Skills</SectionTitle>
-          <div className="mt-20 grid grid-cols-4 gap-10 items-center flex-wrap justify-center">
+          <div className="mt-20 flex gap-10 items-center flex-wrap justify-center">
             <Logos />
           </div>
 
