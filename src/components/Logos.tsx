@@ -10,9 +10,9 @@ export const Logos = () => {
     const logos = [<HtmlIcon />, <CSSIcon />, <TailwindIcon />, <JavascriptIcon />, <TypescriptIcon />, <ReactLogo />, <NextLogo />, <NodeLogo />, <ExpressLogo />, <MongoLogo />, <MySQLLogo />, <MaterialUILogo />,]  
       return (
         <>
-            {logos.map(logo => {
+            {logos.map((logo, idx) => {
                 return (
-                    <div className="w-16 lg:w-[84px]">
+                    <div key={idx} className="w-16 lg:w-[84px]">
                         {logo}
                     </div>
                 )

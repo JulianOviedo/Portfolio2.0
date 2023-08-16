@@ -66,3 +66,41 @@ nav ul li::hover {
             transform: translateX(0px);
   }
 }
+
+#typewritter {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: rgb(246, 238, 238);
+  animation: type 1.5s steps(30) infinite alternate;
+}
+
+#typewritter::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 1.2em;
+  background-color: #000;
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes type {
+from { width: 100% }
+to { width: 0 }
+}
+
+@keyframes cursor-blink {
+0%, 100% { opacity: 0; } 
+50% { opacity: 1; } 
+}
+
+
+
+
+
+
+
+
+
+
+

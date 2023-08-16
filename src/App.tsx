@@ -22,7 +22,7 @@ function App() {
   
 
   return (
-    <div className="bg-bg-light lg:px-32">
+    <div className="relative bg-bg-light lg:px-32">
 
 
       <header className="flex flex-row p-6 py-3 justify-between">
@@ -35,7 +35,7 @@ function App() {
           <ul className="flex-row hidden gap-8 items-center text-disabled sm:flex">
             {NAV_LIs.map(navItem => {
               return (
-                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105'}`} key={navItem}>
+                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
                   <a className="hover:text-black" href={`#${navItem}`}>{navItem}</a>
                 </li>
               )
@@ -52,7 +52,7 @@ function App() {
       </header>
 
       {isBurgerMenuOpen && 
-        <div id="burger-menu" className="absolute bg-white w-full h-full p-6">
+        <div id="burger-menu" className="z-20 absolute bg-white w-full h-full p-6">
           <nav className="flex flex-col">
           <ul className="flex-col items-center">
             {NAV_LIs.map(navItem => {
@@ -71,11 +71,11 @@ function App() {
       <main className="p-6 ">
 
         <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col">
-          <span className="text-primary font-bold text-2xl">Hello! 👋🏻 My Name is</span>
-          <h1 className="font-extrabold text-4xl">Julian Oviedo</h1>
-          <h2>oficios...</h2>
-          <p className="font-light">creo paginas web algo asi je</p>
-          <a href="#My Work" className="text-white bg-primary rounded w-44 h-16 mt-4 font-extralight px-4 text-lg hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer">
+          <span className="text-primary font-bold text-xl">Hello! 👋🏻 My Name is</span>
+          <h1 className="font-extrabold text-4xl mt-4">Julian Oviedo</h1>
+          <h2 className="mt-2 relative text-2xl font-bold">FrontEnd Web Developer  .<span id='typewritter'>&#160;</span></h2>
+          <p className="mt-1 text-sm">I design and build websites that look good, and work well.</p>
+          <a href="#My Work" className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer">
             See my Work
           </a>
         </section>
