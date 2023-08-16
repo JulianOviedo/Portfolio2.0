@@ -11,15 +11,18 @@ function App() {
 
   const NAV_LIs = ['Home', 'About', 'Skills', 'My Work', 'Contact']
 
-  const handleBurgerMenu = () => { 
+  const handleBurgerMenu = () => {
+    const span = document.getElementById('burger-logo')
+    console.log(span)
     setIsBurgerMenuOpen(!isBurgerMenuOpen)
     if (isBurgerMenuOpen) {
       document.body.classList.remove('no-scroll')
+
     } else {
       document.body.classList.add('no-scroll')
     }
   }
-  
+
 
   return (
     <div className="relative bg-bg-light lg:px-32">
@@ -42,26 +45,26 @@ function App() {
             })}
             <button className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</button>
           </ul>
-        <div className="flex flex-row gap-1 items-center ml-4">
-          <button onClick={handleBurgerMenu}>
-           <BurgerMenuIcon />
-          </button>
-          <LighThemeIcon/>
-        </div>
+          <div className="flex flex-row gap-2 items-center ml-4">
+            <button onClick={handleBurgerMenu}>
+              <BurgerMenuIcon isOpen={isBurgerMenuOpen} />
+            </button>
+            <LighThemeIcon />
+          </div>
         </nav>
       </header>
 
-      {isBurgerMenuOpen && 
+      {isBurgerMenuOpen &&
         <div id="burger-menu" className="z-20 absolute bg-white w-full h-full p-6">
           <nav className="flex flex-col">
-          <ul className="flex-col items-center">
-            {NAV_LIs.map(navItem => {
-              return (
-                <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
-                  <a onClick={handleBurgerMenu} className="hover:text-disabled cursor-pointer  text-black" href={`#${navItem}`}>{navItem}</a>
-                </li>
-              )
-            })}
+            <ul className="flex-col items-center">
+              {NAV_LIs.map(navItem => {
+                return (
+                  <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
+                    <a onClick={handleBurgerMenu} className="hover:text-disabled cursor-pointer  text-black" href={`#${navItem}`}>{navItem}</a>
+                  </li>
+                )
+              })}
             </ul>
             <a href="mailto:julianovie234@gmail.com" className="bg-primary w-32 text-center mt-4 px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</a>
           </nav>
@@ -99,30 +102,30 @@ function App() {
           <SectionTitle>Skills</SectionTitle>
 
           <div className="mt-20 flex flex-row gap-10 items-center flex-wrap justify-center">
-            <Logos/>
+            <Logos />
           </div>
 
         </section>
 
         <section id="My Work" className="mb-40">
-            <SectionTitle>My Work</SectionTitle>
-            <Proyects/>
+          <SectionTitle>My Work</SectionTitle>
+          <Proyects />
         </section>
 
         <section id="Contact">
-            <SectionTitle>Contact</SectionTitle>
-            <p className="mt-10">
+          <SectionTitle>Contact</SectionTitle>
+          <p className="mt-10">
             I'm currently available to get involved in new projects, so get in touch if you'd like to work together. <br /><br />
             Email me at <a className="text-primary font-bold hover:underline" href="mailto:julianovie234@gmail.com">julianovie234@gmail.com</a> and let's talk about your project!
-            </p>
+          </p>
         </section>
 
-        <hr className="w-full h-1 bg-disabled border-none my-14"/>
+        <hr className="w-full h-1 bg-disabled border-none my-14" />
 
         <footer className="flex flex-col gap-4">
-          <Logo/>
+          <Logo />
           <span>© 2023 - Developed by Julian Oviedo</span>
-          <SocialMedia/>
+          <SocialMedia />
         </footer>
 
 
