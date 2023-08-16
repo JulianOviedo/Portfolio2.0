@@ -53,7 +53,7 @@ function App() {
 
       {isBurgerMenuOpen && 
         <div id="burger-menu" className="absolute bg-white w-full h-full p-6">
-          <nav className="flex">
+          <nav className="flex flex-col">
           <ul className="flex-col items-center">
             {NAV_LIs.map(navItem => {
               return (
@@ -63,6 +63,7 @@ function App() {
               )
             })}
             </ul>
+            <a href="mailto:julianovie234@gmail.com" className="bg-primary w-32 text-center mt-4 px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</a>
           </nav>
         </div>
       }
