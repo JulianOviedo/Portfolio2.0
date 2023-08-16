@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { useObserver } from "./hooks/useObserver"
+import { useState } from "react"
+// import { useObserver } from "./hooks/useObserver"
 import { SectionTitle } from "./components/SectionTitle";
 import { Logos } from "./components/Logos";
 import { BurgerMenuIcon, LighThemeIcon, Logo } from "./assets/Icons/Icons";
@@ -45,7 +45,7 @@ function App() {
             })}
             <button className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</button>
           </ul>
-          <div className="flex flex-row gap-2 items-center ml-4">
+          <div className="flex flex-row gap-3 items-center ml-4">
             <button onClick={handleBurgerMenu}>
               <BurgerMenuIcon isOpen={isBurgerMenuOpen} />
             </button>
@@ -61,7 +61,7 @@ function App() {
               {NAV_LIs.map(navItem => {
                 return (
                   <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
-                    <a onClick={handleBurgerMenu} className="hover:text-disabled cursor-pointer  text-black" href={`#${navItem}`}>{navItem}</a>
+                    <a onClick={handleBurgerMenu} className="hover:text-disabled cursor-pointer text-black" href={`#${navItem}`}>{navItem}</a>
                   </li>
                 )
               })}
@@ -89,7 +89,7 @@ function App() {
 
           <img className="w-[500px] h-[450px] rounded-md" src="src/assets/profile.png" alt="profile img" />
           <p className="my-6 text-lg font-extralight">
-            👋🏻 My name is Julian, I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
+            👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
             🌍  I'm based in Córdoba, Argentina <br /><br />
 
@@ -100,8 +100,7 @@ function App() {
 
         <section id="Skills" className="mb-40">
           <SectionTitle>Skills</SectionTitle>
-
-          <div className="mt-20 flex flex-row gap-10 items-center flex-wrap justify-center">
+          <div className="mt-20 grid grid-cols-5 gap-10 items-center flex-wrap justify-center">
             <Logos />
           </div>
 
@@ -116,7 +115,7 @@ function App() {
           <SectionTitle>Contact</SectionTitle>
           <p className="mt-10">
             I'm currently available to get involved in new projects, so get in touch if you'd like to work together. <br /><br />
-            Email me at <a className="text-primary font-bold hover:underline" href="mailto:julianovie234@gmail.com">julianovie234@gmail.com</a> and let's talk about your project!
+            Email me at <a className="text-primary font-bold hover:underline" href="mailto:julianovie234@gmail.com">julianovie234@gmail.com</a> and let's talk !
           </p>
         </section>
 
