@@ -23,7 +23,7 @@ function App() {
   }
 
 
-  const [observer, setElements, entries] = useObserver({
+  const [,setElements, entries] = useObserver({
     threshold: 0.6,
     root: null,
     rootMargin: '-50px',
