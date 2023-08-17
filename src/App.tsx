@@ -85,7 +85,7 @@ function App() {
           <SectionTitle>About</SectionTitle>
 
 
-          <img className="w-full h-[350px] rounded-md" src="/profile.png" alt="profile img" />
+          <img className="w-full h-[350px] rounded-md" src="./profile.png" alt="profile img" />
           <p className="my-6 text-md text-justify font-extralight">
             👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
