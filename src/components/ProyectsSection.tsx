@@ -5,7 +5,7 @@ export const Proyects = () => {
     return (
         <>
             <ProyectCard
-                img={"./countries-api.png"}
+                img={"/countries-api.png"}
                 title={"Countries API"}
                 technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon/>]}
                 urlGithub={'https://github.com/JulianOviedo/countries-api'}
@@ -13,7 +13,7 @@ export const Proyects = () => {
                 description="Countries around the world. App made with react and typescript and wouter"
             />
             <ProyectCard
-                img={"./shoes-shop.png"}
+                img={"/shoes-shop.png"}
                 title={"Shoes Shop - Ecommerce"}
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <NextLogo />, <JavascriptIcon/>]}
                 urlGithub={'https://github.com/emiacerbi/shoes-shop'}
@@ -22,7 +22,7 @@ export const Proyects = () => {
                 like Axios & ReactQuery to connect the API to the app."
             />
             <ProyectCard
-                img={"./short-url.png"}
+                img={"/short-url.png"}
                 title={"Shorter URL"}
                 urlDeploy={'https://url-shortly-qmg2.vercel.app/'}
                 urlGithub={'https://github.com/JulianOviedo/url-shortly'}
@@ -30,7 +30,7 @@ export const Proyects = () => {
                 description="Short your looooong looooooong URL"
             />
             <ProyectCard
-                img={"./tesla.png"}
+                img={"/tesla.png"}
                 title={"Tesla Landing"}
                 urlGithub={'https://github.com/JulianOviedo/Tesla-landing'}
                 urlDeploy={'https://tesla-landing-pi.vercel.app/'}
@@ -38,7 +38,7 @@ export const Proyects = () => {
                 description="Copy of the official landing of Tesla."
             />
               <ProyectCard
-                img={"./movie-browser.png"}
+                img={"/movie-browser.png"}
                 title={"Movie Browser"}
                 urlGithub={'https://github.com/JulianOviedo/Movie-Browser'}
                 urlDeploy={'https://movie-browser-pi.vercel.app/'}
@@ -47,14 +47,14 @@ export const Proyects = () => {
                 was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input."
             />
              <ProyectCard
-                img={"./yelp-camp.png"}
+                img={"/yelp-camp.png"}
                 title={"Yelp Camp"}
                 urlGithub={'https://github.com/JulianOviedo/YelpCamp'}
                 technologies={[<HtmlIcon />, <MaterialUILogo/>, <JavascriptIcon/>, <ReactLogo/>, <NextLogo/>, <ExpressLogo/>, <NodeLogo/>, <MongoLogo/>]}
                 description="Fullstack app"
             />
               <ProyectCard
-                img={"./old-portfolio.png"}
+                img={"/old-portfolio.png"}
                 title={"Portfolio v1.0"}
                 urlGithub={'https://github.com/JulianOviedo/Portfolio'}
                 urlDeploy={'https://julianoviedo-portfolio.vercel.app/'}
