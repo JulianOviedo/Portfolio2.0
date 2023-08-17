@@ -12,7 +12,7 @@ interface ProyectCardProps {
 export const ProyectCard = ({ img, title, description, technologies, urlGithub, urlDeploy }: ProyectCardProps) => {
     return (
         <article className="h-540 w-full shadow-md rounded bg-white p-4 mt-10 lg:mt-0 lg:w-[600px]">
-            <img src={img} alt={title} className="rounded w-full h-[190px]"></img>
+            <img src={img} alt={title} className="rounded w-full h-[190px] shadow-xl"></img>
             <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
             <hr className="w-20 h-1 bg-primary mt-3 " />
             <div className="mb-8 mt-4 flex flex-row gap-2 flex-wrap">
