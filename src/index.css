@@ -161,6 +161,32 @@ burger-logo span:nth-child(1) {
   transform: rotate(-135deg);
 }
 
+#rotate.open {
+  background-color: black;
+	-webkit-animation: rotate 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
 
 
 

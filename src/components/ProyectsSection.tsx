@@ -3,7 +3,7 @@ import { ProyectCard } from "./ProyectCard"
 
 export const Proyects = () => {
     return (
-        <>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-20 lg:justify-items-center lg:mt-10">
             <ProyectCard
                 img={"/countries-api.png"}
                 title={"Countries API"}
@@ -61,6 +61,6 @@ export const Proyects = () => {
                 technologies={[<HtmlIcon />, <MaterialUILogo/>, <JavascriptIcon/>, <ReactLogo/>]}
                 description="Old Portfolio"
             />
-        </>
+        </div>
     )
 }
