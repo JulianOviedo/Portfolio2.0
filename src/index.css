@@ -72,7 +72,7 @@ nav ul li::hover {
   right: 0;
   width: 0;
   background-color: rgb(246, 238, 238);
-  animation: type 1.5s steps(30) infinite alternate;
+  animation: type 2s steps(30) infinite ;
 }
 
 #typewritter::after {
@@ -81,7 +81,7 @@ nav ul li::hover {
   width: 5px;
   height: 1.2em;
   background-color: #000;
-  animation: cursor-blink 2s infinite;
+  animation: cursor-blink 0.5s infinite;
 }
 
 @keyframes type {

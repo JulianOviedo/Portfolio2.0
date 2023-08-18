@@ -8,6 +8,16 @@ import { useObserver } from "./hooks/useObserver";
 
 function App() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
+  const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Dog Dad 🤣   .'];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((currentIndex + 1) % titlesList.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   const NAV_LIs = ['Home', 'About', 'Skills', 'My Work', 'Contact']
 
@@ -40,7 +50,6 @@ function App() {
     })
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry.target)
         const section = entry.target.getAttribute('id')
         const box = document.querySelector(`a[data-box="${section}"]`);
         box?.classList.add('open')
@@ -120,7 +129,7 @@ function App() {
         <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24">
           <span className="text-primary font-bold text-xl lg:text-2xl">Hello! 👋🏻 My Name is</span>
           <h1 className="font-extrabold text-4xl mt-4 lg:text-6xl">Julian Oviedo</h1>
-          <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl">FrontEnd Web Developer  .<span id='typewritter'>&#160;</span></h2>
+          <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl">{titlesList[currentIndex]}<span id='typewritter'>&#160;</span></h2>
           <p className="mt-2 text-sm lg:text-lg">I design and build websites that look good, and work well.</p>
           <a href="#My Work" className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:mb-56 lg:text-md">
             See my Work
