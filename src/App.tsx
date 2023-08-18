@@ -70,7 +70,7 @@ function App() {
         </div>
 
         <nav className="flex gap-4 lg:gap-8 items-center">
-          <ul className="flex-row hidden gap-8 items-center text-disabled sm:flex">
+          <ul className="flex-row hidden gap-8 items-center text-disabled md:flex">
             {NAV_LIs.map(navItem => {
               return (
                 <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
@@ -80,7 +80,7 @@ function App() {
             })}
             <a href="mailto:julianovie234@gmail.com" className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</a>
           </ul>
-          <div className="flex flex-row gap-3 items-center ml-4 lg:hidden">
+          <div className="flex flex-row gap-3 items-center ml-4 md:hidden">
             <button onClick={handleBurgerMenu}>
               <BurgerMenuIcon isOpen={isBurgerMenuOpen} />
             </button>
@@ -138,7 +138,7 @@ function App() {
 
         <section id="About" className="mb-40 lg:h-screen" >
           <SectionTitle>About</SectionTitle>
-          <div className="lg:flex lg:flex-row-reverse lg:gap-10 lg:justify-end">
+          <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
           <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
           <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg">
             👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />

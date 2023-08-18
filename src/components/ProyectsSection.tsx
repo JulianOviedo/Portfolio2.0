@@ -3,7 +3,7 @@ import { ProyectCard } from "./ProyectCard"
 
 export const Proyects = () => {
     return (
-        <div className="lg:grid lg:grid-cols-2 lg:gap-20 lg:justify-items-center lg:mt-10">
+        <div className="xl:grid xl:grid-cols-2 xl:gap-20 xl:justify-items-center xl:mt-10 mt-10 lg:flex lg:items-center lg:flex-col lg:gap-20 ">
             <ProyectCard
                 img={"/countries-api.png"}
                 title={"Countries API"}
