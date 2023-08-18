@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { SectionTitle } from "./components/SectionTitle";
 import { Logos } from "./components/Logos";
-import { BurgerMenuIcon, LighThemeIcon, Logo } from "./assets/Icons/Icons";
+import { BurgerMenuIcon, DarkThemeIcon, LighThemeIcon, Logo } from "./assets/Icons/Icons";
 import { Proyects } from "./components/ProyectsSection";
 import { SocialMedia } from "./components/SocialMedia";
 import { useObserver } from "./hooks/useObserver";
 
 function App() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
+
+
   const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Dog Dad 🤣   .'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -32,7 +35,7 @@ function App() {
   }
 
 
-  const [,setElements, entries] = useObserver({
+  const [, setElements, entries] = useObserver({
     threshold: 0.6,
     root: null,
     rootMargin: '-50px',
@@ -57,10 +60,22 @@ function App() {
     })
   })
 
+  const ref = useRef<HTMLDivElement>(null)
+
+  const handleTheme = () => {
+    setDarkMode(!darkMode)
+    if (!darkMode) {
+      ref.current?.classList.add('dark')
+    }
+    if (darkMode) {
+      ref.current?.classList.remove('dark')
+    }
+  }
+
 
 
   return (
-    <div className="relative bg-bg-light lg:px-32">
+    <div ref={ref} className="relative bg-bg-light lg:px-32">
 
 
       <header className="flex flex-row p-6 py-3 justify-between">
@@ -85,7 +100,10 @@ function App() {
               <BurgerMenuIcon isOpen={isBurgerMenuOpen} />
             </button>
           </div>
-            <LighThemeIcon />
+          {darkMode
+            ? <DarkThemeIcon handleTheme={handleTheme} />
+            : <LighThemeIcon handleTheme={handleTheme}/>
+          }
         </nav>
       </header>
 
@@ -139,16 +157,16 @@ function App() {
         <section id="About" className="mb-40 lg:h-screen" >
           <SectionTitle>About</SectionTitle>
           <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
-          <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
-          <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg">
-            👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
+            <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
+            <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg">
+              👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
-            🌍  I'm based in Córdoba, Argentina <br /><br />
+              🌍  I'm based in Córdoba, Argentina <br /><br />
 
-            🖥 I'm a software developer with solid professional experience building web applications. My main focus is on the front-end, but i love building and learning about both ends of the stacks. <br /><br />
+              🖥 I'm a software developer with solid professional experience building web applications. My main focus is on the front-end, but i love building and learning about both ends of the stacks. <br /><br />
 
-            📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
-            </div>
+              📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
+          </div>
         </section>
 
         <section id="Skills" className="mb-40 lg:h-screen">
