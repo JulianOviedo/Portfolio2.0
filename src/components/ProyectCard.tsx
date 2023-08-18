@@ -24,8 +24,8 @@ export const ProyectCard = ({ img, title, description, technologies, urlGithub, 
                     )
                 })}
             </div>
-            <p className="mb-10 font-extralight text-sm">{description}</p>
-            <div className="flex flex-row gap-2 text-sm lg:justify-center">
+            <p className="mb-10 font-extralight text-sm lg:mb-0 lg:h-[100px]">{description}</p>
+            <div className="flex flex-row gap-2 text-sm ">
                 {urlDeploy &&
                     <a href={urlDeploy} target="_blank" id='button' className="flex flex-row gap-1 items-center bg-primary text-disabled-light px-5 lg:px-10 py-3 rounded-md cursor-pointer hover:text-white hover:animate-bounce">
                         <UrlIcon />
