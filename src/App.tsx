@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-// import { useObserver } from "./hooks/useObserver"
 import { SectionTitle } from "./components/SectionTitle";
 import { Logos } from "./components/Logos";
 import { BurgerMenuIcon, LighThemeIcon, Logo } from "./assets/Icons/Icons";
@@ -61,7 +60,7 @@ function App() {
           <h1 className="font-bold text-lg">Julian Oviedo</h1>
         </div>
 
-        <nav className="flex">
+        <nav className="flex gap-4 lg:gap-8 items-center">
           <ul className="flex-row hidden gap-8 items-center text-disabled sm:flex">
             {NAV_LIs.map(navItem => {
               return (
@@ -70,14 +69,14 @@ function App() {
                 </li>
               )
             })}
-            <button className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</button>
+            <a href="mailto:julianovie234@gmail.com" className="bg-primary px-4 p-2 text-white rounded hover:shadow-xl hover:underline">Hire Me</a>
           </ul>
           <div className="flex flex-row gap-3 items-center ml-4 lg:hidden">
             <button onClick={handleBurgerMenu}>
               <BurgerMenuIcon isOpen={isBurgerMenuOpen} />
             </button>
-            <LighThemeIcon />
           </div>
+            <LighThemeIcon />
         </nav>
       </header>
 
@@ -131,8 +130,8 @@ function App() {
         <section id="About" className="mb-40 lg:h-screen" >
           <SectionTitle>About</SectionTitle>
           <div className="lg:flex lg:flex-row-reverse lg:gap-10 lg:justify-end">
-          <img className="w-full lg:w-[550px] h-[350px] lg:h-[450px] lg:ml-20 border rounded-md" src="/profile.png" alt="profile img" />
-          <p className="my-6 text-md text-justify font-extralight lg:w-[35%] lg:text-lg">
+          <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
+          <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg">
             👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
             🌍  I'm based in Córdoba, Argentina <br /><br />
