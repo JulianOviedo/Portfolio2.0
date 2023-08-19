@@ -11,7 +11,7 @@ interface ProyectCardProps {
 
 export const ProyectCard = ({ img, title, description, technologies, urlGithub, urlDeploy }: ProyectCardProps) => {
     return (
-        <article className="h-540 w-full shadow-md rounded bg-white p-4 mt-10 lg:mt-0 lg:w-[600px]">
+        <article className="h-540 w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:w-[600px]">
             <img src={img} alt={title} className="rounded w-full h-[190px] shadow-xl"></img>
             <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
             <hr className="w-20 h-1 bg-primary mt-3 " />
@@ -24,7 +24,7 @@ export const ProyectCard = ({ img, title, description, technologies, urlGithub, 
                     )
                 })}
             </div>
-            <p className="mb-10 font-extralight text-sm lg:mb-0 lg:h-[100px]">{description}</p>
+            <p className="mb-10 font-extralight text-sm lg:mb-0 lg:h-[100px] dark:text-disabled">{description}</p>
             <div className="flex flex-row gap-2 text-sm ">
                 {urlDeploy &&
                     <a href={urlDeploy} target="_blank" id='button' className="flex flex-row gap-1 items-center bg-primary text-disabled-light px-5 lg:px-10 py-3 rounded-md cursor-pointer hover:text-white hover:animate-bounce">

@@ -75,8 +75,9 @@ function App() {
 
 
   return (
-    <div ref={ref} className="relative bg-bg-light lg:px-32">
+    <div ref={ref} >
 
+    <div className="relative bg-bg-light lg:px-32 dark:bg-bg-dark dark:text-white">
 
       <header className="flex flex-row p-6 py-3 justify-between">
         <div className="flex flex-row gap-4 items-center">
@@ -88,7 +89,7 @@ function App() {
           <ul className="flex-row hidden gap-8 items-center text-disabled md:flex">
             {NAV_LIs.map(navItem => {
               return (
-                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
+                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
                   <a className="hover:text-black" href={`#${navItem}`}>{navItem}</a>
                 </li>
               )
@@ -147,8 +148,8 @@ function App() {
         <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24">
           <span className="text-primary font-bold text-xl lg:text-2xl">Hello! 👋🏻 My Name is</span>
           <h1 className="font-extrabold text-4xl mt-4 lg:text-6xl">Julian Oviedo</h1>
-          <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl">{titlesList[currentIndex]}<span id='typewritter'>&#160;</span></h2>
-          <p className="mt-2 text-sm lg:text-lg">I design and build websites that look good, and work well.</p>
+          <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl dark:text-disabled">{titlesList[currentIndex]}<span id='typewritter' className="bg-bg-light after:bg-bg-dark dark:bg-bg-dark dark:after:bg-white">&#160;</span></h2>
+          <p className="mt-2 text-sm lg:text-lg dark:text-disabled">I design and build websites that look good, and work well.</p>
           <a href="#My Work" className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:mb-56 lg:text-md">
             See my Work
           </a>
@@ -158,7 +159,7 @@ function App() {
           <SectionTitle>About</SectionTitle>
           <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
             <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
-            <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg">
+            <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg dark:text-disabled">
               👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
 
               🌍  I'm based in Córdoba, Argentina <br /><br />
@@ -203,6 +204,7 @@ function App() {
 
 
       </main>
+    </div>
     </div>
   )
 }

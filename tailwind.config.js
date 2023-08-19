@@ -13,8 +13,12 @@ export default {
       'disabled': 'rgb(158, 158, 158)',
       'disabled-light': 'rgb(232, 232, 232)',
       'bg-header': 'rgb(240, 230, 230)',
+      'bg-dark' : 'rgba(34,34,43)',
+      'bg-dark-prycard' : 'rgb(40, 40, 51)'
+
     },
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 }
