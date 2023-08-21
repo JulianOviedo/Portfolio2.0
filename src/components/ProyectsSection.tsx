@@ -7,7 +7,7 @@ export const Proyects = () => {
             <ProyectCard
                 img={"/countries-api.png"}
                 title={"Countries API"}
-                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon/>]}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon />]}
                 urlGithub={'https://github.com/JulianOviedo/countries-api'}
                 urlDeploy={'https://countries-api-sooty.vercel.app/'}
                 description="Countries around the world. App made with react and typescript and wouter"
@@ -15,7 +15,7 @@ export const Proyects = () => {
             <ProyectCard
                 img={"/shoes-shop.png"}
                 title={"Shoes Shop - Ecommerce"}
-                technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <NextLogo />, <JavascriptIcon/>]}
+                technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <NextLogo />, <JavascriptIcon />]}
                 urlGithub={'https://github.com/emiacerbi/shoes-shop'}
                 urlDeploy={'https://shoes-shop-main.vercel.app/'}
                 description="A team-made app created with Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries
@@ -26,7 +26,7 @@ export const Proyects = () => {
                 title={"Shorter URL"}
                 urlDeploy={'https://url-shortly-qmg2.vercel.app/'}
                 urlGithub={'https://github.com/JulianOviedo/url-shortly'}
-                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon/>]}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon />]}
                 description="Short your looooong looooooong URL"
             />
             <ProyectCard
@@ -34,31 +34,31 @@ export const Proyects = () => {
                 title={"Tesla Landing"}
                 urlGithub={'https://github.com/JulianOviedo/Tesla-landing'}
                 urlDeploy={'https://tesla-landing-pi.vercel.app/'}
-                technologies={[<HtmlIcon />, <TailwindIcon/>, <JavascriptIcon/>]}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />]}
                 description="Copy of the official landing of Tesla."
             />
-              <ProyectCard
+            <ProyectCard
                 img={"/movie-browser.png"}
                 title={"Movie Browser"}
                 urlGithub={'https://github.com/JulianOviedo/Movie-Browser'}
                 urlDeploy={'https://movie-browser-pi.vercel.app/'}
-                technologies={[<HtmlIcon />, <TailwindIcon/>, <JavascriptIcon/>, <ReactLogo/>]}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />, <ReactLogo />]}
                 description="Responsive Movie browser made with React. The main goal of this project 
                 was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input."
             />
-             <ProyectCard
+            <ProyectCard
                 img={"/yelp-camp.png"}
                 title={"Yelp Camp"}
                 urlGithub={'https://github.com/JulianOviedo/YelpCamp'}
-                technologies={[<HtmlIcon />, <MaterialUILogo/>, <JavascriptIcon/>, <ReactLogo/>, <NextLogo/>, <ExpressLogo/>, <NodeLogo/>, <MongoLogo/>]}
+                technologies={[<HtmlIcon />, <MaterialUILogo />, <JavascriptIcon />, <ReactLogo />, <NextLogo />, <ExpressLogo />, <NodeLogo />, <MongoLogo />]}
                 description="Fullstack app"
             />
-              <ProyectCard
+            <ProyectCard
                 img={"/old-portfolio.png"}
                 title={"Portfolio v1.0"}
                 urlGithub={'https://github.com/JulianOviedo/Portfolio'}
                 urlDeploy={'https://julianoviedo-portfolio.vercel.app/'}
-                technologies={[<HtmlIcon />, <MaterialUILogo/>, <JavascriptIcon/>, <ReactLogo/>]}
+                technologies={[<HtmlIcon />, <MaterialUILogo />, <JavascriptIcon />, <ReactLogo />]}
                 description="Old Portfolio"
             />
         </div>

@@ -41,9 +41,9 @@ function App() {
       <div className="relative bg-bg-light lg:px-32 dark:bg-bg-dark dark:text-white">
         <Header divDark={ref} />
         <main className="p-6">
-          <Sections/>
+          <Sections />
           <hr className="w-full h-1 bg-disabled border-none my-14" />
-          <Footer/>
+          <Footer />
         </main>
       </div>
 

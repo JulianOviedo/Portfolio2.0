@@ -7,8 +7,8 @@ import { NextLogo } from "../assets/Icons/Icons"
 import { CSSIcon, HtmlIcon, JavascriptIcon, ReactLogo, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
 
 export const Logos = () => {
-    const logos = [<HtmlIcon />, <CSSIcon />, <TailwindIcon />, <JavascriptIcon />, <TypescriptIcon />, <ReactLogo />, <NextLogo />, <NodeLogo />, <ExpressLogo />, <MongoLogo />, <MySQLLogo />, <MaterialUILogo />,]  
-      return (
+    const logos = [<HtmlIcon />, <CSSIcon />, <TailwindIcon />, <JavascriptIcon />, <TypescriptIcon />, <ReactLogo />, <NextLogo />, <NodeLogo />, <ExpressLogo />, <MongoLogo />, <MySQLLogo />, <MaterialUILogo />,]
+    return (
         <>
             {logos.map((logo, idx) => {
                 return (

@@ -3,11 +3,11 @@ import { BurgerMenuIcon, DarkThemeIcon, LighThemeIcon, Logo } from "../assets/Ic
 import { SocialMedia } from "./SocialMedia";
 
 interface HeaderProps {
-    divDark: any;
+  divDark: any;
 
 }
 
-export const Header = ({divDark} :HeaderProps) => {
+export const Header = ({ divDark }: HeaderProps) => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
 
@@ -35,9 +35,9 @@ export const Header = ({divDark} :HeaderProps) => {
     }
   }
 
-    return (
-        <>
-        <header className="flex flex-row p-6 py-3 justify-between">
+  return (
+    <>
+      <header className="flex flex-row p-6 py-3 justify-between">
         <div className="flex flex-row gap-4 items-center">
           <Logo />
           <h1 className="font-bold text-lg">Julian Oviedo</h1>
@@ -47,7 +47,7 @@ export const Header = ({divDark} :HeaderProps) => {
           <ul className="flex-row hidden gap-8 items-center text-disabled md:flex">
             {NAV_LIs.map(navItem => {
               return (
-                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2' }`} key={navItem}>
+                <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
                   <a className="hover:text-black dark:hover:text-white" href={`#${navItem}`}>{navItem}</a>
                 </li>
               )
@@ -79,7 +79,7 @@ export const Header = ({divDark} :HeaderProps) => {
                 <a href={`#${navItem}`} data-box={`${navItem}`} id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150" key={navItem}></a>
               )
             })}
-            
+
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ export const Header = ({divDark} :HeaderProps) => {
               {NAV_LIs.map(navItem => {
                 return (
                   <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
-                    <a onClick={handleBurgerMenu}  className={`${navItem === 'Home' ? 'hover:text-disabled cursor-pointer text-black dark:text-white border-b-2' : 'hover:text-disabled cursor-pointer text-black dark:text-disabled'}`} href={`#${navItem}`}>{navItem}</a>
+                    <a onClick={handleBurgerMenu} className={`${navItem === 'Home' ? 'hover:text-disabled cursor-pointer text-black dark:text-white border-b-2' : 'hover:text-disabled cursor-pointer text-black dark:text-disabled'}`} href={`#${navItem}`}>{navItem}</a>
                   </li>
                 )
               })}
@@ -100,6 +100,6 @@ export const Header = ({divDark} :HeaderProps) => {
           </nav>
         </div>
       }
-      </>
-    )
+    </>
+  )
 }

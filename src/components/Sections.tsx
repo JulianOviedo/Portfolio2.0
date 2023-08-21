@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react"
-import { Logos } from "./Logos"
+import { Logos } from "./SkillLogos"
 import { Proyects } from "./ProyectsSection"
 import { SectionTitle } from "./SectionTitle"
 import { Timeline } from "./Timeline"
 
 export const Sections = () => {
-    const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Dog Dad 🤣   .'];
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Dog Dad 🤣   .'];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setCurrentIndex((currentIndex + 1) % titlesList.length);
-        }, 2000);
-    
-        return () => clearInterval(interval);
-      }, [currentIndex]);
-      
-    return (
-        <>
-        <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24">
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((currentIndex + 1) % titlesList.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  return (
+    <>
+      <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24">
         <span className="text-primary font-bold text-xl lg:text-2xl">Hello! 👋🏻 My Name is</span>
         <h1 className="font-extrabold text-4xl mt-4 lg:text-6xl">Julian Oviedo</h1>
         <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl dark:text-disabled">{titlesList[currentIndex]}<span id='typewritter' className="bg-bg-light after:bg-bg-dark dark:bg-bg-dark dark:after:bg-white">&#160;</span></h2>
@@ -45,7 +45,7 @@ export const Sections = () => {
 
       <section id="Experience" className="lg:h-screen">
         <SectionTitle>Experience</SectionTitle>
-        <Timeline/>
+        <Timeline />
       </section>
 
       <section id="Skills" className="mb-40 lg:h-screen">
@@ -68,6 +68,6 @@ export const Sections = () => {
           Email me at <a className="text-primary font-bold hover:underline" href="mailto:julianovie234@gmail.com">julianovie234@gmail.com</a> and let's talk !
         </p>
       </section>
-      </>
-    )
+    </>
+  )
 }

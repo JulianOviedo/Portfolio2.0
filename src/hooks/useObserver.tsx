@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react"
 
 type UseObserverProps = [
-    IntersectionObserver | null, 
+    IntersectionObserver | null,
     React.Dispatch<React.SetStateAction<Element[]>>,
     IntersectionObserverEntry[]
-  ];
+];
 
-export const useObserver = (options: IntersectionObserverInit):UseObserverProps => {
+export const useObserver = (options: IntersectionObserverInit): UseObserverProps => {
     const [elements, setElements] = useState<Element[]>([])
     const [entries, setEntries] = useState<IntersectionObserverEntry[]>([])
 
