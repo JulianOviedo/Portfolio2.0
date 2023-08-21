@@ -117,13 +117,12 @@ function App() {
           </div>
           <div className="fixed right-24 bottom-0 h-44 w-[2px] bg-disabled ">
             <div className="fixed bottom-48 -ml-2 flex flex-col gap-4">
-              <a href="#Home" data-box='Home' id="rotate" className="open w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-              <a href="#About" data-box='About' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-              <a href="#Experience" data-box='Experience' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-              <a href="#Skills" data-box='Skills' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-              <a href="#My Work" data-box='My Work' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-              <a href="#Contact" data-box='Contact' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
-
+              {NAV_LIs.map(navItem => {
+                return (
+                  <a href={`#${navItem}`} data-box={`${navItem}`} id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150" key={navItem}></a>
+                )
+              })}
+              
             </div>
           </div>
         </div>
