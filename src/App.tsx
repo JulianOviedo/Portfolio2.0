@@ -5,6 +5,7 @@ import { BurgerMenuIcon, DarkThemeIcon, LighThemeIcon, Logo } from "./assets/Ico
 import { Proyects } from "./components/ProyectsSection";
 import { SocialMedia } from "./components/SocialMedia";
 import { useObserver } from "./hooks/useObserver";
+import { Timeline } from "./components/Timeline";
 
 function App() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
@@ -22,7 +23,7 @@ function App() {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
-  const NAV_LIs = ['Home', 'About', 'Skills', 'My Work', 'Contact']
+  const NAV_LIs = ['Home', 'About', 'Experience', 'Skills', 'My Work', 'Contact']
 
   const handleBurgerMenu = () => {
     setIsBurgerMenuOpen(!isBurgerMenuOpen)
@@ -89,8 +90,8 @@ function App() {
             <ul className="flex-row hidden gap-8 items-center text-disabled md:flex">
               {NAV_LIs.map(navItem => {
                 return (
-                  <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
-                    <a className="hover:text-black" href={`#${navItem}`}>{navItem}</a>
+                  <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2' }`} key={navItem}>
+                    <a className="hover:text-black dark:hover:text-white" href={`#${navItem}`}>{navItem}</a>
                   </li>
                 )
               })}
@@ -118,6 +119,7 @@ function App() {
             <div className="fixed bottom-48 -ml-2 flex flex-col gap-4">
               <a href="#Home" data-box='Home' id="rotate" className="open w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
               <a href="#About" data-box='About' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
+              <a href="#Experience" data-box='Experience' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
               <a href="#Skills" data-box='Skills' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
               <a href="#My Work" data-box='My Work' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
               <a href="#Contact" data-box='Contact' id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"></a>
@@ -168,6 +170,11 @@ function App() {
 
                 📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
             </div>
+          </section>
+
+          <section id="Experience" className="lg:h-screen">
+            <SectionTitle>Experience</SectionTitle>
+            <Timeline/>
           </section>
 
           <section id="Skills" className="mb-40 lg:h-screen">
