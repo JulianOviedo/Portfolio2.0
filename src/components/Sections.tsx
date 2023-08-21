@@ -43,7 +43,7 @@ export const Sections = () => {
         </div>
       </section>
 
-      <section id="Experience" className="lg:h-screen">
+      <section id="Experience" className="mb-40 lg:h-screen">
         <SectionTitle>Experience</SectionTitle>
         <Timeline />
       </section>
