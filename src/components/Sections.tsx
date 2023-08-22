@@ -5,7 +5,7 @@ import { SectionTitle } from "./SectionTitle"
 import { Timeline } from "./Timeline"
 
 export const Sections = () => {
-  const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Dog Dad 🤣   .'];
+  const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Musician   .', 'Dog Dad 🤣   .'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
