@@ -18,6 +18,7 @@ function App() {
 
   useEffect(() => {
     const stickyBoxes = document.querySelectorAll('#rotate')
+    console.log(stickyBoxes)
     stickyBoxes.forEach(stickyBox => {
       stickyBox.classList.remove('open')
     })

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { BurgerMenuIcon, DarkThemeIcon, LighThemeIcon, Logo } from "../assets/Icons/Icons"
 import { SocialMedia } from "./SocialMedia";
+import { Link } from "react-scroll";
 
 interface HeaderProps {
   divDark: any;
@@ -48,7 +49,7 @@ export const Header = ({ divDark }: HeaderProps) => {
             {NAV_LIs.map(navItem => {
               return (
                 <li className={`${navItem === 'Home' ? 'text-black scale-105 border-b-2 dark:text-white' : 'transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2'}`} key={navItem}>
-                  <a className="hover:text-black dark:hover:text-white" href={`#${navItem}`}>{navItem}</a>
+                  <Link to={`${navItem}`} smooth={true} className="hover:text-black dark:hover:text-white">{navItem}</Link>
                 </li>
               )
             })}
@@ -76,7 +77,7 @@ export const Header = ({ divDark }: HeaderProps) => {
           <div className="fixed bottom-48 -ml-2 flex flex-col gap-4">
             {NAV_LIs.map(navItem => {
               return (
-                <a href={`#${navItem}`} data-box={`${navItem}`} id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150" key={navItem}></a>
+                <Link to={navItem} smooth={true} data-box={`${navItem}`} id="rotate" className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150" key={navItem}></Link>
               )
             })}
 

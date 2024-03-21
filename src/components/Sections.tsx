@@ -3,6 +3,7 @@ import { Logos } from "./SkillLogos"
 import { Proyects } from "./ProyectsSection"
 import { SectionTitle } from "./SectionTitle"
 import { Timeline } from "./Timeline"
+import { Element } from "react-scroll"
 
 export const Sections = () => {
   const titlesList = ['FrontEnd Web Developer', 'Accountant', 'Musician', 'Dog Dad 🤣'];
@@ -28,6 +29,7 @@ export const Sections = () => {
         </a>
       </section>
 
+      <Element name="About">
       <section id="About" className="mb-40 lg:h-screen" >
         <SectionTitle>About</SectionTitle>
         <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
@@ -42,25 +44,32 @@ export const Sections = () => {
             📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
         </div>
       </section>
+      </Element>
 
+      <Element name="Experience">
       <section id="Experience" className="mb-40 lg:h-screen">
         <SectionTitle>Experience</SectionTitle>
         <Timeline />
       </section>
+      </Element>
 
+      <Element name="Skills">
       <section id="Skills" className="mb-40 lg:h-screen">
         <SectionTitle>Skills</SectionTitle>
         <div className="mt-20 flex gap-10 lg:gap-28 items-center flex-wrap justify-center lg:w-[70%] lg:m-auto lg:mt-20">
           <Logos />
         </div>
-
       </section>
+      </Element>
 
+      <Element name="My Work">
       <section id="My Work" className="mb-40 ">
         <SectionTitle>My Work</SectionTitle>
         <Proyects />
       </section>
+      </Element>
 
+      <Element name="Contact">
       <section id="Contact" className="lg:mt-24 ">
         <SectionTitle>Contact</SectionTitle>
         <p className="mt-10">
@@ -68,6 +77,7 @@ export const Sections = () => {
           Email me at <a className="text-primary font-bold hover:underline" href="mailto:julianovie234@gmail.com">julianovie234@gmail.com</a> and let's talk !
         </p>
       </section>
+      </Element>
     </>
   )
 }
