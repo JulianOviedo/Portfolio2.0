@@ -20,8 +20,8 @@ export default {
     extend: {
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)', opacity: '0.05' },
-          '50%': { transform: 'rotate(3deg)', opacity: '1' },
+          '0%, 100%': { transform: 'rotate(-2deg)', opacity: '0.05' },
+          '50%': { transform: 'rotate(2deg)', opacity: '1' },
         }
       },
       animation: {
