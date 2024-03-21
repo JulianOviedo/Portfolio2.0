@@ -67,48 +67,6 @@ nav ul li::hover {
   }
 }
 
-#typewritter {
-  position: absolute;
-  right: 0;
-  width: 0;
-  animation: type 2s steps(30) infinite ;
-  
-}
-
-#typewritter::after {
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 1.2em;
-  animation: cursor-blink 0.5s infinite;
-
-}
-
-@keyframes type {
-from { width: 100% }
-to { width: 0 }
-}
-
-@keyframes cursor-blink {
-0%, 100% { opacity: 0; } 
-50% { opacity: 1; } 
-}
-
-#burger-logo {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-}
-
 #burger-logo span {
   display: block;
   position: absolute;

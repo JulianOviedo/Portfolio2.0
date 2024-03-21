@@ -17,7 +17,17 @@ export default {
       'bg-dark-prycard' : 'rgb(40, 40, 51)'
 
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)', opacity: '0.05' },
+          '50%': { transform: 'rotate(3deg)', opacity: '1' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+    }
   },
   plugins: [],
   darkMode: 'class',

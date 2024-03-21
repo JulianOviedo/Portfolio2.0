@@ -5,7 +5,7 @@ import { SectionTitle } from "./SectionTitle"
 import { Timeline } from "./Timeline"
 
 export const Sections = () => {
-  const titlesList = ['FrontEnd Web Developer   .', 'Accountant   .', 'Musician   .', 'Dog Dad 🤣   .'];
+  const titlesList = ['FrontEnd Web Developer', 'Accountant', 'Musician', 'Dog Dad 🤣'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Sections = () => {
       <section id="Home" className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24">
         <span className="text-primary font-bold text-xl lg:text-2xl">Hello! 👋🏻 My Name is</span>
         <h1 className="font-extrabold text-4xl mt-4 lg:text-6xl">Julian Oviedo</h1>
-        <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl dark:text-disabled">{titlesList[currentIndex]}<span id='typewritter' className="bg-bg-light after:bg-bg-dark dark:bg-bg-dark dark:after:bg-white">&#160;</span></h2>
+        <h2 className="mt-2 relative text-2xl font-bold lg:text-4xl dark:text-disabled animate-wiggle">{titlesList[currentIndex]}</h2>
         <p className="mt-2 text-sm lg:text-lg dark:text-disabled">I design and build websites that look good, and work well.</p>
         <a href="#My Work" className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:mb-56 lg:text-md">
           See my Work
