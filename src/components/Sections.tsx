@@ -35,13 +35,17 @@ export const Sections = () => {
         <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
           <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
           <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg dark:text-disabled">
-            👋🏻 I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />
+          👋🏻 Hello there! I'm Julian, a passionate software developer based in Córdoba, Argentina. With a background in Public Accounting, I've transitioned into the world of computer science, currently pursuing a degree in the field. <br /><br />
 
-            🌍  I'm based in Córdoba, Argentina <br /><br />
+          💼 In my current role at Solvd, I specialize in front-end development while also delving into backend tools and technologies. Known for my teamwork and empathy, I thrive in collaborative environments, constantly seeking opportunities to learn and grow both personally and professionally.<br /><br />
 
-            🖥 I'm a software developer with solid professional experience building web applications. My main focus is on the front-end, but i love building and learning about both ends of the stacks. <br /><br />
+          👨‍🏫 Additionally, I've had the privilege of mentoring testing students at Solvd, focusing on frontend development. I organize weekly classes, assign tasks, and provide constructive feedback to help others reach their full potential in software development. <br /><br />
 
-            📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
+          🌱 I'm always eager to expand my skill set and explore new technologies in the development landscape.<br /><br />
+
+          🌎 Fluent in English, I'm adept at communicating in international settings and contributing to global projects. <br /><br />
+
+          I'm excited to continue my journey of growth and contribute to the ever-evolving world of software development!</p>
         </div>
       </section>
       </Element>
