@@ -30,11 +30,11 @@ export const Sections = () => {
       </section>
 
       <Element name="About">
-      <section id="About" className="mb-40 lg:h-screen" >
+      <section id="About" className="mb-40" >
         <SectionTitle>About</SectionTitle>
-        <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
-          <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.png" alt="profile img" />
-          <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg dark:text-disabled">
+        <div className="md:flex md:flex-col md:gap-10 md:justify-end xl:flex-row-reverse mt-10">
+          <img className="md:w-[60%] md:h-[60%] xl:w-[40%] md:self-center xl:self-start rounded-md" src="/profile.png" alt="profile img" />
+          <p className="my-6 text-md text-justify font-extralight lg:w-full lg:text-lg dark:text-disabled h-auto">
           👋🏻 Hello there! I'm Julian, a passionate software developer based in Córdoba, Argentina. With a background in Public Accounting, I've transitioned into the world of computer science, currently pursuing a degree in the field. <br /><br />
 
           💼 In my current role at Solvd, I specialize in front-end development while also delving into backend tools and technologies. Known for my teamwork and empathy, I thrive in collaborative environments, constantly seeking opportunities to learn and grow both personally and professionally.<br /><br />
