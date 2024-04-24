@@ -33,7 +33,7 @@ export const Sections = () => {
       <section id="About" className="mb-40 lg:h-screen" >
         <SectionTitle>About</SectionTitle>
         <div className="md:flex md:flex-row-reverse md:gap-10 md:justify-end mt-10">
-          <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.jpeg" alt="profile img" />
+          <img className="w-full lg:w-[450px] h-[350px] lg:h-[550px] lg:ml-20  rounded-md " src="/profile.png" alt="profile img" />
           <p className="my-6 text-md text-justify font-extralight lg:w-[45%] lg:text-lg dark:text-disabled">
           👋🏻 Hello there! I'm Julian, a passionate software developer based in Córdoba, Argentina. With a background in Public Accounting, I've transitioned into the world of computer science, currently pursuing a degree in the field. <br /><br />
 

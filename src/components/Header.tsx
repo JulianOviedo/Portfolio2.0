@@ -92,7 +92,7 @@ export const Header = ({ divDark }: HeaderProps) => {
               {NAV_LIs.map(navItem => {
                 return (
                   <li className='mb-4 transition-all duration-150 ease-in-out hover:scale-105' key={navItem}>
-                    <a onClick={handleBurgerMenu} className={`${navItem === 'Home' ? 'hover:text-disabled cursor-pointer text-black dark:text-white border-b-2' : 'hover:text-disabled cursor-pointer text-black dark:text-disabled'}`} href={`#${navItem}`}>{navItem}</a>
+                    <Link onClick={handleBurgerMenu} className={`${navItem === 'Home' ? 'hover:text-disabled cursor-pointer text-black dark:text-white border-b-2' : 'hover:text-disabled cursor-pointer text-black dark:text-disabled'}`} to={`${navItem}`} smooth={true}>{navItem}</Link>
                   </li>
                 )
               })}
