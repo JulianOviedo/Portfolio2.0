@@ -49,7 +49,7 @@ export const Sections = () => {
       </section>
 
       <Element name="About">
-        <section id="About" className="mb-40">
+        <section id="About" className="mb-40 lg:h-screen">
           <SectionTitle>About</SectionTitle>
           <div className="md:flex md:flex-col md:gap-10 md:justify-center xl:flex-row-reverse mt-10 xl:max-h-[700px]">
             <img
