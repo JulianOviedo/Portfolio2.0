@@ -1,12 +1,7 @@
 import { useState } from "react";
-import {
-  BurgerMenuIcon,
-  DarkThemeIcon,
-  LighThemeIcon,
-  Logo,
-} from "../assets/Icons/Icons";
-import { SocialMedia } from "./SocialMedia";
 import { Link } from "react-scroll";
+import { BurgerMenuIcon, DarkThemeIcon, LighThemeIcon, Logo } from "../assets/Icons/Icons";
+import { SocialMedia } from "./SocialMedia";
 
 interface HeaderProps {
   divDark: any;
@@ -15,6 +10,7 @@ interface HeaderProps {
 export const Header = ({ divDark }: HeaderProps) => {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [currentActive, setCurrentActive] = useState("");
 
   const NAV_LIs = [
     "Home",
@@ -27,24 +23,19 @@ export const Header = ({ divDark }: HeaderProps) => {
 
   const handleBurgerMenu = () => {
     setIsBurgerMenuOpen(!isBurgerMenuOpen);
-    if (isBurgerMenuOpen) {
-      document.body.classList.remove("no-scroll");
-    } else {
-      document.body.classList.add("no-scroll");
-    }
+    document.body.classList.toggle("no-scroll", isBurgerMenuOpen);
   };
 
   const handleTheme = () => {
     setDarkMode(!darkMode);
-    if (!darkMode) {
-      divDark.current?.classList.add("dark");
-    }
-    if (darkMode) {
-      divDark.current?.classList.remove("dark");
-    }
+    divDark.current?.classList.toggle("dark", !darkMode);
   };
-  
-  const NAVBAR_OFFSET = 80
+
+  const NAVBAR_OFFSET = 80;
+
+  const handleSetActive = (to:any) => {
+    setCurrentActive(to);
+  };
 
   return (
     <>
@@ -59,16 +50,17 @@ export const Header = ({ divDark }: HeaderProps) => {
             {NAV_LIs.map((navItem) => {
               return (
                 <li
-                  className="transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2"
                   key={navItem}
+                  className="transition-all duration-150 ease-in-out cursor-pointer hover:scale-105 hover:border-b-2"
                 >
                   <Link
-                    to={`${navItem}`}
+                    to={navItem}
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={-NAVBAR_OFFSET}
                     className="hover:text-black dark:hover:text-white"
+                    onSetActive={handleSetActive}
                   >
                     {navItem}
                   </Link>
@@ -113,7 +105,7 @@ export const Header = ({ divDark }: HeaderProps) => {
                   offset={-NAVBAR_OFFSET}
                   spy={true}
                   id="rotate"
-                  className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"
+                  className={`w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150 ${currentActive === navItem ? 'open' : ''}`} // Aquí aplicas la clase 'open'
                   key={navItem}
                 ></Link>
               );
@@ -140,8 +132,9 @@ export const Header = ({ divDark }: HeaderProps) => {
                       className="hover:text-disabled cursor-pointer text-black dark:text-disabled"
                       activeClass="active"
                       offset={-NAVBAR_OFFSET}
-                      to={`${navItem}`}
+                      to={navItem}
                       smooth={true}
+                      onSetActive={handleSetActive}
                     >
                       {navItem}
                     </Link>

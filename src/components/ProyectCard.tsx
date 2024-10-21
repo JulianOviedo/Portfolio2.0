@@ -22,7 +22,7 @@ export const ProyectCard = ({
       <img
         src={img}
         alt={title}
-        className="rounded w-full h-[190px] shadow-xl"
+        className="rounded w-full h-[190px] shadow-xl object-cover object-top"
       ></img>
       <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
       <hr className="w-20 h-1 bg-primary mt-3 " />
