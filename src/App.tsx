@@ -6,10 +6,9 @@ import { Footer } from "./components/Footer";
 
 function App() {
   const [, setElements, entries] = useObserver({
-    threshold: 0.8,
+    threshold: 0.3, // Este valor puede ser ajustado entre 0 y 1
     root: null,
-    rootMargin: '-50px',
-  })
+  });
 
   useEffect(() => {
     const sections = Array.from(document.querySelectorAll('section'))

@@ -114,7 +114,7 @@ export const Sections = () => {
       </Element>
 
       <Element name="Contact">
-        <section id="Contact" className="lg:mt-24">
+        <section id="Contact" className="h-[30vh] flex flex-col justify-end">
           <SectionTitle>Contact</SectionTitle>
           <p className="mt-10">
             I'm currently available to get involved in new projects, so get in
