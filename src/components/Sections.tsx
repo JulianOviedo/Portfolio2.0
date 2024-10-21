@@ -49,11 +49,11 @@ export const Sections = () => {
       </section>
 
       <Element name="About">
-        <section id="About" className="mb-40 lg:h-screen">
+        <section id="About" className="mb-40 lg:h-screen mt:10">
           <SectionTitle>About</SectionTitle>
-          <div className="md:flex md:flex-col md:gap-10 md:justify-center xl:flex-row-reverse mt-10 xl:max-h-[700px]">
+          <div className="flex flex-col md:gap-10 md:justify-center items-center xl:flex-row-reverse mt-10 xl:max-h-[700px]">
             <img
-              className="w-full sm:w-[450px] sm:self-center"
+              className="w-full sm:w-[450px]"
               src="/profile.png"
               alt="profile img"
             />
@@ -91,14 +91,14 @@ export const Sections = () => {
       </Element>
 
       <Element name="Experience">
-        <section id="Experience" className="mb-40 lg:h-screen">
+        <section id="Experience" className="mb-40 lg:h-screen mt:10">
           <SectionTitle>Experience</SectionTitle>
           <Timeline />
         </section>
       </Element>
 
       <Element name="Skills">
-        <section id="Skills" className="mb-40 lg:h-screen">
+        <section id="Skills" className="mb-40 lg:h-screen mt:10">
           <SectionTitle>Skills</SectionTitle>
           <div className="mt-20 flex gap-10 lg:gap-28 items-center flex-wrap justify-center lg:w-[70%] lg:m-auto lg:mt-20">
             <Logos />
@@ -107,14 +107,14 @@ export const Sections = () => {
       </Element>
 
       <Element name="My Work">
-        <section id="My Work" className="mb-40 ">
+        <section id="My Work" className="mb-40 mt:10">
           <SectionTitle>My Work</SectionTitle>
           <Proyects />
         </section>
       </Element>
 
       <Element name="Contact">
-        <section id="Contact" className="lg:mt-24 ">
+        <section id="Contact" className="lg:mt-24">
           <SectionTitle>Contact</SectionTitle>
           <p className="mt-10">
             I'm currently available to get involved in new projects, so get in

@@ -43,6 +43,8 @@ export const Header = ({ divDark }: HeaderProps) => {
       divDark.current?.classList.remove("dark");
     }
   };
+  
+  const NAVBAR_OFFSET = 80
 
   return (
     <>
@@ -65,6 +67,7 @@ export const Header = ({ divDark }: HeaderProps) => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
+                    offset={-NAVBAR_OFFSET}
                     className="hover:text-black dark:hover:text-white"
                   >
                     {navItem}
@@ -107,6 +110,7 @@ export const Header = ({ divDark }: HeaderProps) => {
                   smooth={true}
                   data-box={`${navItem}`}
                   activeClass="active"
+                  offset={-NAVBAR_OFFSET}
                   spy={true}
                   id="rotate"
                   className="w-[20px] h-[20px] bg-disabled rounded hover:bg-black cursor-pointer transition-all duration-150"
@@ -135,6 +139,7 @@ export const Header = ({ divDark }: HeaderProps) => {
                       onClick={handleBurgerMenu}
                       className="hover:text-disabled cursor-pointer text-black dark:text-disabled"
                       activeClass="active"
+                      offset={-NAVBAR_OFFSET}
                       to={`${navItem}`}
                       smooth={true}
                     >
