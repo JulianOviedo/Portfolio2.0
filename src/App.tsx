@@ -6,8 +6,9 @@ import { Footer } from "./components/Footer";
 
 function App() {
   const [, setElements, entries] = useObserver({
-    threshold: 0.3, // Este valor puede ser ajustado entre 0 y 1
+    threshold: 0.6, // Este valor puede ser ajustado entre 0 y 1
     root: null,
+    rootMargin: '100px'
   });
 
   useEffect(() => {

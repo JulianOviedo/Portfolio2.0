@@ -8,7 +8,7 @@ export const SocialMedia = () => {
     return (
         <>
             {icons.map((icon, idx) => (
-                <div className="w-8" id="button" key={idx}>
+                <div className="w-8 hover:scale-110" id="button" key={idx}>
                     <a href={hrefs[idx]}>{icon}</a>
                 </div>
             ))}

@@ -1,9 +1,25 @@
-import { ExpressLogo, HtmlIcon, JavascriptIcon, MaterialUILogo, MongoLogo, NextLogo, NodeLogo, ReactLogo, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
+import { HtmlIcon, JavascriptIcon, MaterialUILogo, NextLogo, NodeLogo, ReactLogo, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
 import { ProyectCard } from "./ProyectCard"
 
 export const Proyects = () => {
     return (
         <div className="xl:grid xl:grid-cols-2 xl:gap-20 xl:justify-items-center xl:mt-10 mt-10 lg:flex lg:items-center lg:flex-col lg:gap-20 ">
+            <ProyectCard
+                img={"/solvd.png"}
+                title={"Solvd Main Page"}
+                urlDeploy={'https://www.solvd.com/'}
+                urlGithub={'https://github.com/solvdinc/solvd-website-frontend'}
+                technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <JavascriptIcon/>, <NodeLogo/>]}
+                description="Current project. The company website is constantly modified through the decisions of the marketing team and has a very particular design"
+            />
+             <ProyectCard
+                img={"/gargolas-fc.png"}
+                title={"Gargolas Football Club"}
+                technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>]}
+                urlGithub={'https://github.com/JulianOviedo/GARGOLAS-FC'}
+                urlDeploy={'https://gargolas-fc.vercel.app/'}
+                description="Developed and designed website for an amateur football club"
+            />
             <ProyectCard
                 img={"/countries-api.png"}
                 title={"Countries API"}
@@ -45,13 +61,6 @@ export const Proyects = () => {
                 technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />, <ReactLogo />]}
                 description="Responsive Movie browser made with React. The main goal of this project 
                 was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input."
-            />
-            <ProyectCard
-                img={"/yelp-camp.png"}
-                title={"Yelp Camp"}
-                urlGithub={'https://github.com/JulianOviedo/YelpCamp'}
-                technologies={[<HtmlIcon />, <MaterialUILogo />, <JavascriptIcon />, <ReactLogo />, <NextLogo />, <ExpressLogo />, <NodeLogo />, <MongoLogo />]}
-                description="Fullstack app"
             />
             <ProyectCard
                 img={"/old-portfolio.png"}
