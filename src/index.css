@@ -12,10 +12,12 @@ nav ul li::hover {
 
 .active {
   color: black !important;
+  border-bottom: 2px solid black !important;
 }
 
 .dark .active {
   color: white !important;
+  border-bottom: 2px solid white !important;
 }
 
 #button:hover {
