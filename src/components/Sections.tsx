@@ -3,7 +3,7 @@ import { Logos } from "./SkillLogos";
 import { Proyects } from "./ProyectsSection";
 import { SectionTitle } from "./SectionTitle";
 import { Timeline } from "./Timeline";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 export const Sections = () => {
   const titlesList = [
@@ -40,12 +40,15 @@ export const Sections = () => {
         <p className="mt-2 text-sm lg:text-lg dark:text-disabled">
           I design and build websites that look good, and work well.
         </p>
-        <a
-          href="#My Work"
+        <Link
+          to="My Work"
+          spy={true}
+          smooth={true}
+          offset={-80}
           className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:mb-56 lg:text-md"
         >
           See my Work
-        </a>
+          </Link>
       </section>
 
       <Element name="About">
