@@ -10,6 +10,14 @@ nav ul li::hover {
     border: 2px solid rgb(115, 100, 208);
 }
 
+.active {
+  color: black !important;
+}
+
+.dark .active {
+  color: white !important;
+}
+
 #button:hover {
         -webkit-animation: button 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: button 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
