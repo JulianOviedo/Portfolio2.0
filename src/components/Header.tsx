@@ -46,8 +46,8 @@ export const Header = ({ divDark }: HeaderProps) => {
 
   return (
     <>
-      <header className="flex flex-row p-6 py-3 justify-between sticky top-0 bg-bg-light z-10 dark:bg-bg-dark transition-all duration-1000 ">
-        <div className="flex flex-row gap-4 items-center">
+      <header className="flex flex-row p-6 py-3 justify-between sticky top-0 bg-bg-light dark:bg-bg-dark transition-all duration-1000 ">
+        <div className="flex flex-row gap-4 items-center z-10">
           <Logo />
           <h1 className="font-bold text-lg">Julian Oviedo</h1>
         </div>
