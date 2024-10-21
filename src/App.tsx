@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   const [, setElements, entries] = useObserver({
-    threshold: 0.6,
+    threshold: 0.8,
     root: null,
     rootMargin: '-50px',
   })
