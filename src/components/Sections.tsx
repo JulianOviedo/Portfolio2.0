@@ -56,7 +56,7 @@ export const Sections = () => {
           <SectionTitle>About</SectionTitle>
           <div className="flex flex-col md:gap-10 md:justify-center items-center xl:flex-row-reverse mt-10 xl:max-h-[700px]">
             <img
-              className="w-full sm:w-[450px]"
+              className="w-full sm:w-[450px] rounded-lg"
               src="/profile.png"
               alt="profile img"
             />
