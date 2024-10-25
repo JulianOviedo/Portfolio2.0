@@ -24,6 +24,9 @@ export const Header = ({ divDark }: HeaderProps) => {
   const handleBurgerMenu = () => {
     setIsBurgerMenuOpen(!isBurgerMenuOpen);
     document.body.classList.toggle("no-scroll", isBurgerMenuOpen);
+    if (!isBurgerMenuOpen) {
+      window.scrollTo(0, 0);
+    }
   };
 
   const handleTheme = () => {
@@ -39,7 +42,7 @@ export const Header = ({ divDark }: HeaderProps) => {
 
   return (
     <>
-      <header className="flex flex-row p-6 py-3 justify-between sticky top-0 bg-bg-light dark:bg-bg-dark transition-all duration-1000 ">
+      <header className="flex flex-row p-6 py-3 justify-between sticky top-0 bg-bg-light dark:bg-bg-dark transition-all duration-1000 z-[999] rounded-lg ">
         <div className="flex flex-row gap-4 items-center z-10">
           <Logo />
           <h1 className="font-bold text-lg">Julian Oviedo</h1>
@@ -117,7 +120,7 @@ export const Header = ({ divDark }: HeaderProps) => {
       {isBurgerMenuOpen && (
         <div
           id="burger-menu"
-          className="z-20 absolute bg-white w-full h-full p-6 dark:bg-bg-dark"
+          className="z-20 absolute bg-white w-full h-full p-6 dark:bg-bg-dark overflow-hidden"
         >
           <nav className="flex flex-col">
             <ul className="flex-col items-center">
