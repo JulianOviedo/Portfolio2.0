@@ -120,7 +120,7 @@ export const Header = ({ divDark }: HeaderProps) => {
       {isBurgerMenuOpen && (
         <div
           id="burger-menu"
-          className="z-20 absolute bg-white w-full h-full p-6 dark:bg-bg-dark overflow-hidden"
+          className="z-20 absolute w-full h-full p-6 dark:bg-bg-dark overflow-hidden bg-bg-light"
         >
           <nav className="flex flex-col">
             <ul className="flex-col items-center">
