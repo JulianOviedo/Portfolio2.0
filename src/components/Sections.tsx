@@ -4,6 +4,7 @@ import { Proyects } from "./ProyectsSection";
 import { SectionTitle } from "./SectionTitle";
 import { Timeline } from "./Timeline";
 import { Element, Link } from "react-scroll";
+import { Footer } from "./Footer";
 
 export const Sections = () => {
   const titlesList = [
@@ -26,7 +27,7 @@ export const Sections = () => {
     <>
       <section
         id="Home"
-        className="text-xl flex h-screen items-start justify-center flex-col lg:ml-24"
+        className="text-xl flex min-h-screen items-start justify-center flex-col lg:ml-24"
       >
         <span className="text-primary font-bold text-xl lg:text-2xl">
           Hello! 👋🏻 My Name is
@@ -45,14 +46,14 @@ export const Sections = () => {
           spy={true}
           smooth={true}
           offset={-80}
-          className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:mb-56 lg:text-md"
+          className="text-white bg-primary rounded w-34 h-12 mt-4 font-extralight px-4 text-sm hover:shadow-2xl hover:underline flex items-center justify-center cursor-pointer lg:text-md"
         >
           See my Work
           </Link>
       </section>
 
       <Element name="About">
-        <section id="About" className="mb-40 lg:h-screen mt:10">
+        <section id="About" className="lg:min-h-screen mt:10">
           <SectionTitle>About</SectionTitle>
           <div className="flex flex-col md:gap-10 md:justify-center items-center xl:flex-row-reverse mt-10 xl:max-h-[700px]">
             <img
@@ -94,14 +95,14 @@ export const Sections = () => {
       </Element>
 
       <Element name="Experience">
-        <section id="Experience" className="mb-40 lg:h-screen mt:10">
+        <section id="Experience" className="lg:min-h-screen mt:10">
           <SectionTitle>Experience</SectionTitle>
           <Timeline />
         </section>
       </Element>
 
       <Element name="Skills">
-        <section id="Skills" className="mb-40 lg:h-screen mt:10">
+        <section id="Skills" className="lg:min-h-screen mt:10">
           <SectionTitle>Skills</SectionTitle>
           <div className="mt-20 flex gap-10 lg:gap-28 items-center flex-wrap justify-center lg:w-[70%] lg:m-auto lg:mt-20">
             <Logos />
@@ -110,7 +111,7 @@ export const Sections = () => {
       </Element>
 
       <Element name="My Work">
-        <section id="My Work" className="mb-40 mt:10">
+        <section id="My Work" className="mt:10">
           <SectionTitle>My Work</SectionTitle>
           <Proyects />
         </section>
@@ -132,6 +133,7 @@ export const Sections = () => {
             </a>{" "}
             and let's talk !
           </p>
+          <Footer />
         </section>
       </Element>
     </>
