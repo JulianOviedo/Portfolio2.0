@@ -34,7 +34,7 @@ export const Header = ({ divDark }: HeaderProps) => {
     divDark.current?.classList.toggle("dark", !darkMode);
   };
 
-  const NAVBAR_OFFSET = 80;
+  const NAVBAR_OFFSET = 300;
 
   const handleSetActive = (to:any) => {
     setCurrentActive(to);
