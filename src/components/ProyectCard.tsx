@@ -18,7 +18,7 @@ export const ProyectCard = ({
   urlDeploy,
 }: ProyectCardProps) => {
   return (
-    <article className="h-540 w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:w-[600px]">
+    <article className="h-540 w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:max-w-[600px]">
       <img
         src={img}
         alt={title}
