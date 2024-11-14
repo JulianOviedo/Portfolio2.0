@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# 🚀 Julian Oviedo - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](https://portfolio2-0-azure.vercel.app/screenshot.png)
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio repository! Here you'll find the source code for my portfolio website, where I showcase my projects, skills, and professional experience as a Frontend Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Live Demo
 
-## Expanding the ESLint configuration
+Check out the live version of my portfolio [here](https://portfolio2-0-azure.vercel.app/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+This portfolio was built with modern and efficient technologies to ensure great performance and a sleek user experience:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **TypeScript** for type safety
+- **Deployment**: Vercel
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🚀 About Me
+
+I’m Julian Oviedo, a passionate Frontend Developer with 3+ years of experience. Currently, I’m part of the talented team at **Solvd, Inc.**, where I’ve been contributing to the design, development, and maintenance of the company’s main website ([solvd.com](https://www.solvd.com/)). My expertise spans across:
+
+- **Frontend Frameworks**: React, Next.js
+- **Styling Tools**: Tailwind CSS, Material UI
+- **State Management**: Redux, Context API
+- **Testing**: Jest, React Testing Library
+- **Backend Knowledge**: Experience with Node.js, Express, and working with RESTful APIs
+
+> 💡 Additionally, I have experience with React Native, which allows me to build efficient and scalable mobile applications.
+
+Feel free to explore my **portfolio** and reach out if you have any questions or collaboration ideas!
