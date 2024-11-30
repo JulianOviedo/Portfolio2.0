@@ -1,4 +1,4 @@
-import { HtmlIcon, JavascriptIcon, MaterialUILogo, NextLogo, NodeLogo, ReactLogo, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
+import { HtmlIcon, JavascriptIcon, MaterialUILogo, NextLogo, NodeLogo, ReactLogo, SupabaseIcon, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
 import { ProyectCard } from "./ProyectCard"
 
 export const Proyects = () => {
@@ -11,6 +11,14 @@ export const Proyects = () => {
                 urlGithub={'https://github.com/solvdinc/solvd-website-frontend'}
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <JavascriptIcon/>, <NodeLogo/>]}
                 description="Current project. The company website is constantly modified through the decisions of the marketing team and has a very particular design"
+            />
+            <ProyectCard
+                img={"/surveydApp.png"}
+                title={"Surveyd App"}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <JavascriptIcon />, <NextLogo/>, <SupabaseIcon/>]}
+                urlGithub={'https://github.com/utvecklarlabbet/enkatt'}
+                urlDeploy={'https://surveyd.app/'}
+                description="The Survey App is an efficient, modern, and user-friendly tool that enables the creation, distribution, and analysis of surveys effectively, designed with a focus on user experience and scalability."
             />
              <ProyectCard
                 img={"/gargolas-fc.png"}
@@ -52,15 +60,6 @@ export const Proyects = () => {
                 urlDeploy={'https://tesla-landing-pi.vercel.app/'}
                 technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />]}
                 description="Copy of the official landing of Tesla."
-            />
-            <ProyectCard
-                img={"/movie-browser.png"}
-                title={"Movie Browser"}
-                urlGithub={'https://github.com/JulianOviedo/Movie-Browser'}
-                urlDeploy={'https://movie-browser-pi.vercel.app/'}
-                technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />, <ReactLogo />]}
-                description="Responsive Movie browser made with React. The main goal of this project 
-                was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input."
             />
             <ProyectCard
                 img={"/old-portfolio.png"}

@@ -1,4 +1,4 @@
-import { ExpressLogo, GraphQLIcon, StrapiIcon } from "../assets/Icons/Icons";
+import { ExpressLogo, GraphQLIcon, PrismaIcon, StrapiIcon, SupabaseIcon } from "../assets/Icons/Icons";
 import { NodeLogo } from "../assets/Icons/Icons";
 import { MaterialUILogo } from "../assets/Icons/Icons";
 import { MySQLLogo } from "../assets/Icons/Icons";
@@ -29,6 +29,10 @@ export const Logos = () => {
     { logo: <MaterialUILogo />, description: "Material-UI" },
     { logo: <GraphQLIcon />, description: "GraphQL" },
     { logo: <StrapiIcon />, description: "Strapi" },
+    { logo: <SupabaseIcon />, description: "Supabase" },
+    { logo: <PrismaIcon />, description: "Prisma" },
+
+
   ];
 
   return (

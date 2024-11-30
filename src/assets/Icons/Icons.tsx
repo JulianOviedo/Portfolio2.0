@@ -378,11 +378,7 @@ export const GraphQLIcon = () => {
 
 export const StrapiIcon = () => {
   return (
-    <svg
-      viewBox="0 0 600 600"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M0 208C0 109.948 0 60.9218 30.4609 30.4609C60.9218 0 109.948 0 208 0H392C490.052 0 539.078 0 569.539 30.4609C600 60.9218 600 109.948 600 208V392C600 490.052 600 539.078 569.539 569.539C539.078 600 490.052 600 392 600H208C109.948 600 60.9218 600 30.4609 569.539C0 539.078 0 490.052 0 392V208Z"
         className="fill-black dark:fill-disabled"
@@ -405,6 +401,40 @@ export const StrapiIcon = () => {
       <path
         d="M212 285H113.828C112.046 285 111.154 282.846 112.414 281.586L212 182V285Z"
         className="fill-disabled dark:fill-black"
+      />
+    </svg>
+  );
+};
+
+export const SupabaseIcon = () => {
+  return (
+    <svg viewBox="0 0 64 64" version="1.1" className="fill-none">
+      <path
+        d="m 37.41219,62.936701 c -1.634985,2.05896 -4.950068,0.93085 -4.989463,-1.69817 L 31.846665,22.786035 h 25.855406 c 4.683108,0 7.294967,5.409033 4.382927,9.07673 z"
+        className="fill-black dark:fill-disabled"
+      />
+      <path
+        d="m 37.41219,62.936701 c -1.634985,2.05896 -4.950068,0.93085 -4.989463,-1.69817 L 31.846665,22.786035 h 25.855406 c 4.683108,0 7.294967,5.409033 4.382927,9.07673 z"
+        className="fill-black dark:fill-disabled"
+      />
+      <path
+        d="m 26.89694,1.0634102 c 1.634986,-2.05918508 4.950125,-0.93090008 4.989521,1.698149 L 32.138899,41.214003 H 6.607076 c -4.6832501,0 -7.29518376,-5.409032 -4.3830007,-9.07673 z"
+        className="fill-black dark:fill-disabled"
+      />
+    </svg>
+  );
+};
+
+export const PrismaIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+    >
+      <title>file_type_prisma</title>
+      <path
+        d="M25.21,24.21,12.739,27.928a.525.525,0,0,1-.667-.606L16.528,5.811a.43.43,0,0,1,.809-.094l8.249,17.661A.6.6,0,0,1,25.21,24.21Zm2.139-.878L17.8,2.883h0A1.531,1.531,0,0,0,16.491,2a1.513,1.513,0,0,0-1.4.729L4.736,19.648a1.592,1.592,0,0,0,.018,1.7l5.064,7.909a1.628,1.628,0,0,0,1.83.678l14.7-4.383a1.6,1.6,0,0,0,1-2.218Z"
+        className="fill-black dark:fill-disabled"
       />
     </svg>
   );
