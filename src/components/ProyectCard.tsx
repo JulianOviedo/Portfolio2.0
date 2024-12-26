@@ -18,27 +18,27 @@ export const ProyectCard = ({
   urlDeploy,
 }: ProyectCardProps) => {
   return (
-    <article className="h-540 w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:max-w-[600px]">
-      <img
-        src={img}
-        alt={title}
-        className="rounded w-full h-[190px] shadow-xl object-cover object-top"
-      ></img>
-      <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
-      <hr className="w-20 h-1 bg-primary mt-3 " />
-      <div className="mb-8 mt-4 flex flex-row gap-2 flex-wrap">
-        {technologies.map((techlogo, index) => {
-          return (
+    <article className="h-full w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:max-w-[600px] flex flex-col">
+      <div className="flex-1">
+        <img
+          src={img}
+          alt={title}
+          className="rounded w-full h-[190px] shadow-xl object-cover object-top"
+        ></img>
+        <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
+        <hr className="w-20 h-1 bg-primary mt-3 " />
+        <div className="mb-8 mt-4 flex flex-row gap-2 flex-wrap">
+          {technologies.map((techlogo, index) => (
             <div className="w-6" key={index}>
               {techlogo}
             </div>
-          );
-        })}
+          ))}
+        </div>
+        <p className="mb-10 font-extralight text-sm lg:mb-0 lg:h-auto dark:text-disabled">
+          {description}
+        </p>
       </div>
-      <p className="mb-10 font-extralight text-sm lg:mb-0 lg:h-[100px] dark:text-disabled">
-        {description}
-      </p>
-      <div className="flex flex-row gap-2 text-sm ">
+      <div className="flex flex-row gap-2 text-sm mt-auto pt-4">
         {urlDeploy && (
           <a
             href={urlDeploy}

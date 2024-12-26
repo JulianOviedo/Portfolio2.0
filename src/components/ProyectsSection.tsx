@@ -10,7 +10,15 @@ export const Proyects = () => {
                 urlDeploy={'https://www.solvd.com/'}
                 urlGithub={'https://github.com/solvdinc/solvd-website-frontend'}
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <JavascriptIcon/>, <NodeLogo/>]}
-                description="Current project. The company website is constantly modified through the decisions of the marketing team and has a very particular design"
+                description="The Solvd website is the main corporate site of Solvd Inc., developed to showcase the company’s services, portfolio, and expertise. Built with React, Next.js, and Tailwind CSS, the site features responsive design and dynamic components, ensuring an engaging user experience across all devices. The development involved translating frequent Figma designs from the UX team into high-quality, interactive web components, reflecting the company’s brand and technical standards."
+            />
+            <ProyectCard
+                img={"/svend-app.png"}
+                title={"Svend App"}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <SupabaseIcon/>]}
+                urlGithub={'https://github.com/topsoft-consulting/svend'}
+                urlDeploy={'https://my.svend.app/'}
+                description="Svend App is an ongoing personal finance web application designed to help users manage their budgets, track expenses, and gain insights into their financial habits. Built with Next.js, Shadcn, Supabase, PostgreSQL, and TypeScript, the app delivers a seamless and intuitive user experience while leveraging a robust backend for data management and security."
             />
             <ProyectCard
                 img={"/surveydApp.png"}
@@ -61,14 +69,14 @@ export const Proyects = () => {
                 technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />]}
                 description="Copy of the official landing of Tesla."
             />
-            <ProyectCard
+            {/* <ProyectCard
                 img={"/old-portfolio.png"}
                 title={"Portfolio v1.0"}
                 urlGithub={'https://github.com/JulianOviedo/Portfolio'}
                 urlDeploy={'https://julianoviedo-portfolio.vercel.app/'}
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <JavascriptIcon />, <ReactLogo />]}
                 description="Old Portfolio"
-            />
+            /> */}
         </div>
     )
 }
