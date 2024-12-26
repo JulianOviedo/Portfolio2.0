@@ -11,6 +11,7 @@ export const Proyects = () => {
                 urlGithub={'https://github.com/solvdinc/solvd-website-frontend'}
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <JavascriptIcon/>, <NodeLogo/>]}
                 description="The Solvd website is the main corporate site of Solvd Inc., developed to showcase the company’s services, portfolio, and expertise. Built with React, Next.js, and Tailwind CSS, the site features responsive design and dynamic components, ensuring an engaging user experience across all devices. The development involved translating frequent Figma designs from the UX team into high-quality, interactive web components, reflecting the company’s brand and technical standards."
+                isCurrent
             />
             <ProyectCard
                 img={"/svend-app.png"}
@@ -19,6 +20,7 @@ export const Proyects = () => {
                 urlGithub={'https://github.com/topsoft-consulting/svend'}
                 urlDeploy={'https://my.svend.app/'}
                 description="Svend App is an ongoing personal finance web application designed to help users manage their budgets, track expenses, and gain insights into their financial habits. Built with Next.js, Shadcn, Supabase, PostgreSQL, and TypeScript, the app delivers a seamless and intuitive user experience while leveraging a robust backend for data management and security."
+                isCurrent
             />
             <ProyectCard
                 img={"/surveydApp.png"}

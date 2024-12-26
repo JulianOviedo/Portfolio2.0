@@ -7,6 +7,7 @@ interface ProyectCardProps {
   technologies: JSX.Element[];
   urlGithub?: string;
   urlDeploy?: string;
+  isCurrent?: boolean;
 }
 
 export const ProyectCard = ({
@@ -16,6 +17,7 @@ export const ProyectCard = ({
   technologies,
   urlGithub,
   urlDeploy,
+  isCurrent = false,
 }: ProyectCardProps) => {
   return (
     <article className="h-full w-full shadow-md rounded bg-white dark:bg-bg-dark-prycard p-4 mt-10 lg:mt-0 lg:max-w-[600px] flex flex-col">
@@ -25,7 +27,14 @@ export const ProyectCard = ({
           alt={title}
           className="rounded w-full h-[190px] shadow-xl object-cover object-top"
         ></img>
-        <h4 className="font-bold text-xl mt-4 mb-2">{title}</h4>
+        <div className="flex items-center gap-2 mt-4 mb-2">
+          <h4 className="font-bold text-xl">{title}</h4>
+          {isCurrent && (
+            <span className="bg-primary text-white text-xs px-2 py-1 rounded">
+              Current
+            </span>
+          )}
+        </div>
         <hr className="w-20 h-1 bg-primary mt-3 " />
         <div className="mb-8 mt-4 flex flex-row gap-2 flex-wrap">
           {technologies.map((techlogo, index) => (
