@@ -12,6 +12,7 @@ export const Proyects = () => {
                 technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>, <JavascriptIcon/>, <NodeLogo/>]}
                 description="The Solvd website is the main corporate site of Solvd Inc., developed to showcase the company’s services, portfolio, and expertise. Built with React, Next.js, and Tailwind CSS, the site features responsive design and dynamic components, ensuring an engaging user experience across all devices. The development involved translating frequent Figma designs from the UX team into high-quality, interactive web components, reflecting the company’s brand and technical standards."
                 isCurrent
+                isPrivate
             />
             <ProyectCard
                 img={"/svend-app.png"}
@@ -21,6 +22,7 @@ export const Proyects = () => {
                 urlDeploy={'https://my.svend.app/'}
                 description="Svend App is an ongoing personal finance web application designed to help users manage their budgets, track expenses, and gain insights into their financial habits. Built with Next.js, Shadcn, Supabase, PostgreSQL, and TypeScript, the app delivers a seamless and intuitive user experience while leveraging a robust backend for data management and security."
                 isCurrent
+                isPrivate
             />
             <ProyectCard
                 img={"/surveydApp.png"}
@@ -29,6 +31,7 @@ export const Proyects = () => {
                 urlGithub={'https://github.com/utvecklarlabbet/enkatt'}
                 urlDeploy={'https://surveyd.app/'}
                 description="The Survey App is an efficient, modern, and user-friendly tool that enables the creation, distribution, and analysis of surveys effectively, designed with a focus on user experience and scalability."
+                isPrivate
             />
              <ProyectCard
                 img={"/gargolas-fc.png"}
