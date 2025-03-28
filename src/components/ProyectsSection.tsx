@@ -1,4 +1,4 @@
-import { HtmlIcon, JavascriptIcon, MaterialUILogo, NextLogo, NodeLogo, ReactLogo, SupabaseIcon, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
+import { AstroIcon, HtmlIcon, JavascriptIcon, MaterialUILogo, NextLogo, NodeLogo, ReactLogo, SupabaseIcon, TailwindIcon, TypescriptIcon } from "../assets/Icons/Icons"
 import { ProyectCard } from "./ProyectCard"
 
 export const Proyects = () => {
@@ -34,12 +34,12 @@ export const Proyects = () => {
                 isPrivate
             />
              <ProyectCard
-                img={"/gargolas-fc.png"}
-                title={"Gargolas Football Club"}
-                technologies={[<HtmlIcon />, <MaterialUILogo />, <ReactLogo />, <TypescriptIcon />, <NextLogo/>]}
-                urlGithub={'https://github.com/JulianOviedo/GARGOLAS-FC'}
-                urlDeploy={'https://gargolas-fc.vercel.app/'}
-                description="Developed and designed website for an amateur football club"
+                img={"/starlight.webp"}
+                title={"Starlight AI Website"}
+                technologies={[<HtmlIcon />, <TailwindIcon />, <ReactLogo />, <TypescriptIcon />, <AstroIcon/>]}
+                urlDeploy={'https://starlightai.ai/'}
+                description="Starlight AI is a platform that provides a range of AI-powered tools and services to help users create and manage their content effectively. The website showcases the platform's features and benefits, while also offering a user-friendly interface for accessing the AI tools."
+                isPrivate
             />
             <ProyectCard
                 img={"/countries-api.png"}
@@ -58,7 +58,7 @@ export const Proyects = () => {
                 description="A team-made app created with Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries
                 like Axios & ReactQuery to connect the API to the app."
             />
-            <ProyectCard
+            {/* <ProyectCard
                 img={"/short-url.png"}
                 title={"Shorter URL"}
                 urlDeploy={'https://url-shortly-qmg2.vercel.app/'}
@@ -73,7 +73,7 @@ export const Proyects = () => {
                 urlDeploy={'https://tesla-landing-pi.vercel.app/'}
                 technologies={[<HtmlIcon />, <TailwindIcon />, <JavascriptIcon />]}
                 description="Copy of the official landing of Tesla."
-            />
+            /> */}
             {/* <ProyectCard
                 img={"/old-portfolio.png"}
                 title={"Portfolio v1.0"}

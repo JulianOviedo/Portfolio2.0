@@ -1,10 +1,6 @@
 export const Logo = () => {
   return (
-    <svg
-      className="fill-primary w-9 h-8"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 93.13 75.2"
-    >
+    <svg className="fill-primary w-9 h-8" viewBox="0 0 93.13 75.2">
       <rect
         className="fill-current text-brand"
         x="-3.43"
@@ -149,11 +145,7 @@ export const JavascriptIcon = () => {
 
 export const TypescriptIcon = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="fill-dark dark:fill-disabled"
-      viewBox="0 0 512 512"
-    >
+    <svg className="fill-dark dark:fill-disabled" viewBox="0 0 512 512">
       <rect rx="50" width="512" />
       <rect height="512" rx="50" width="512" />
       <path
@@ -200,7 +192,7 @@ export const NodeLogo = () => {
 
 export const ExpressLogo = () => {
   return (
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg role="img" viewBox="0 0 24 24">
       <path
         className="fill-dark dark:fill-disabled"
         d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"
@@ -211,7 +203,7 @@ export const ExpressLogo = () => {
 
 export const MongoLogo = () => {
   return (
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg role="img" viewBox="0 0 24 24">
       <path
         className="fill-dark dark:fill-disabled"
         d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"
@@ -222,11 +214,7 @@ export const MongoLogo = () => {
 
 export const MySQLLogo = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 9.252 4.626"
-      className="fill-dark dark:fill-disabled"
-    >
+    <svg viewBox="0 0 9.252 4.626" className="fill-dark dark:fill-disabled">
       <g
         transform="matrix(.037376 0 0 .037376 1.069994 -1.319339)"
         fillRule="evenodd"
@@ -240,10 +228,7 @@ export const MySQLLogo = () => {
 
 export const MaterialUILogo = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 600 476.30000000000007"
-    >
+    <svg viewBox="0 0 600 476.30000000000007">
       <path
         d="M0 259.8V0l225 129.9v86.6L75 129.9v173.2z"
         className="fill-dark dark:fill-disabled"
@@ -271,7 +256,6 @@ export const UrlIcon = () => {
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         strokeLinecap="round"
@@ -304,7 +288,6 @@ export const GithubIcon = () => {
 export const LinkedinIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
       className="dark:fill-disabled"
@@ -332,7 +315,6 @@ export const InstragramIcon = () => {
 export const GithubDarkIcon = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       className="dark:fill-disabled"
       width="32"
       height="32"
@@ -349,7 +331,6 @@ export const JobExperienceIcon = () => {
       <svg
         className="w-2.5 h-2.5 text-dark dark:text-white"
         aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -361,7 +342,7 @@ export const JobExperienceIcon = () => {
 
 export const GraphQLIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128">
       <g className="fill-black dark:fill-disabled">
         <path d="M18.39 96.852l-4.6-2.657L65.04 5.434l4.597 2.656zm0 0" />
         <path d="M12.734 87.105H115.23v5.31H12.734zm0 0" />
@@ -378,7 +359,7 @@ export const GraphQLIcon = () => {
 
 export const StrapiIcon = () => {
   return (
-    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 600 600" fill="none">
       <path
         d="M0 208C0 109.948 0 60.9218 30.4609 30.4609C60.9218 0 109.948 0 208 0H392C490.052 0 539.078 0 569.539 30.4609C600 60.9218 600 109.948 600 208V392C600 490.052 600 539.078 569.539 569.539C539.078 600 490.052 600 392 600H208C109.948 600 60.9218 600 30.4609 569.539C0 539.078 0 490.052 0 392V208Z"
         className="fill-black dark:fill-disabled"
@@ -427,15 +408,40 @@ export const SupabaseIcon = () => {
 
 export const PrismaIcon = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 32 32"
-    >
+    <svg viewBox="0 0 32 32">
       <title>file_type_prisma</title>
       <path
         d="M25.21,24.21,12.739,27.928a.525.525,0,0,1-.667-.606L16.528,5.811a.43.43,0,0,1,.809-.094l8.249,17.661A.6.6,0,0,1,25.21,24.21Zm2.139-.878L17.8,2.883h0A1.531,1.531,0,0,0,16.491,2a1.513,1.513,0,0,0-1.4.729L4.736,19.648a1.592,1.592,0,0,0,.018,1.7l5.064,7.909a1.628,1.628,0,0,0,1.83.678l14.7-4.383a1.6,1.6,0,0,0,1-2.218Z"
         className="fill-black dark:fill-disabled"
       />
+    </svg>
+  );
+};
+
+export const AstroIcon = () => {
+  return (
+    <svg viewBox="0 0 85 107" fill="none">
+      <path
+        d="M27.5894 91.1365C22.7555 86.7178 21.3444 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4375 78.2199 52.0359 77.7822 59.2232 74.2459C60.0454 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.318 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6845 102.089C39.2087 99.8193 38.5066 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5894 91.1365Z"
+        className="fill-black dark:fill-disabled"
+      />
+      <path
+        d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z"
+        className="fill-black dark:fill-disabled"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_59"
+          x1="22.4702"
+          y1="107"
+          x2="69.1451"
+          y2="84.9468"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#D83333" />
+          <stop offset="1" stopColor="#F041FF" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 };
