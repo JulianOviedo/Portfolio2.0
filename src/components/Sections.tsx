@@ -8,7 +8,7 @@ import { Footer } from "./Footer";
 
 export const Sections = () => {
   const titlesList = [
-    "FrontEnd Web Developer",
+    "Software Developer",
     "Accountant",
     "Musician",
     "Dog Dad 🤣",
