@@ -2,6 +2,7 @@ import {
   AstroIcon,
   ExpressLogo,
   GraphQLIcon,
+  LovableIconSkillLogo,
   PrismaIcon,
   StrapiIcon,
   SupabaseIcon,
@@ -39,6 +40,7 @@ export const Logos = () => {
     { logo: <SupabaseIcon />, description: "Supabase" },
     { logo: <PrismaIcon />, description: "Prisma" },
     { logo: <AstroIcon />, description: "Astro" },
+    { logo: <LovableIconSkillLogo />, description: "Lovable" },
   ];
 
   return (
@@ -49,7 +51,7 @@ export const Logos = () => {
           className="relative group w-16 lg:w-[84px] hover:scale-110 transition-all duration-300"
         >
           {logo}
-          <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-700 text-black dark:text-white text-xs rounded p-1 top-18 lg:top-24 left-1/2 transform -translate-x-1/2 text-center">
+          <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-700 text-black dark:text-white text-xs rounded p-1 top-18 lg:top-28 left-1/2 transform -translate-x-1/2 text-center">
             {description}
           </span>
         </div>

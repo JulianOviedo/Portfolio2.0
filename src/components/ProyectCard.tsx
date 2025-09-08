@@ -48,7 +48,7 @@ export const ProyectCard = ({
         <hr className="w-20 h-1 bg-primary mt-3 " />
         <div className="mb-8 mt-4 flex flex-row gap-2 flex-wrap">
           {technologies.map((techlogo, index) => (
-            <div className="w-6" key={index}>
+            <div className="!w-6" key={index}>
               {techlogo}
             </div>
           ))}
